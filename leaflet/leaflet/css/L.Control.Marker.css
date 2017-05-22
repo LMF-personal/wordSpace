@@ -1,0 +1,63 @@
+.leaflet-control-marker{
+	top: 35px;
+	right: 30px;
+	width: 97px;
+	animation:marker-animation 0.5s;
+	-webkit-animation:marker-animation 0.5s; 
+}
+@keyframes marker-animation
+{
+	from {width:0px;height: 0px;}
+	to {width:97px;height: 25px;}
+}
+
+@-webkit-keyframes marker-animation /* Safari and Chrome */
+{
+	from {width:0px;height: 0px;}
+	to {width:97px;height: 25px;}
+}
+#markerTipWrapper{
+	/*display: none;
+	z-index: 100000;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 300px;
+	height: 140px;
+	margin-top: -70px;
+	margin-left: -150px;
+	background-color: rgba(149,185,230,0.8);
+	color: #0078A8;
+	border-radius: 10px;
+	font-size: 12px;
+}
+#markerTipWrapper>p:first-child{
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 20px;
+}
+#markerTipWrapper>input{
+	display: block;
+	width: 260px;
+	height: 20px;
+	border: 1px solid #95B9E6;
+	margin: 20px auto;
+}
+#markerTipWrapper>p:last-child{
+	text-align: center;
+}
+#markerTipWrapper>p:last-child>input{
+	width: 80px;
+	height: 25px;
+	margin: 0px 10px;
+}
+.coverAll{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 100000;
+	background-color: rgba(255,255,255,0.5);
+}

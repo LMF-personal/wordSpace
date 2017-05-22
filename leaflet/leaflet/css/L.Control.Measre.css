@@ -1,0 +1,86 @@
+.leaflet-control-showMeasure{
+	width: 25px;
+	height: 25px;
+	background-color: rgba(149,185,230,0.8);
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: center;
+	line-height: 25px;
+}
+.leaflet-control-showMeasure>img{
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+}
+.leaflet-control-measure{
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	height: 25px;
+	width: 73px;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	overflow: hidden;
+	transition: width 0.5s,height 0.5s;
+    -webkit-transition: width 0.5s,height 0.5s; /* Safari */
+	animation:measure-animation 0.5s;
+	-webkit-animation:measure-animation 0.5s; /* Safari and Chrome */
+}
+.leaflet-control-measureRemove{
+	height: 0px;
+	width: 0px;
+}
+@keyframes measure-animation
+{
+	from {width:0px;height: 0px;}
+	to {width:73px;height: 25px;}
+}
+
+@-webkit-keyframes measure-animation /* Safari and Chrome */
+{
+	from {width:0px;height: 0px;}
+	to {width:73px;height: 25px;}
+}
+.leaflet-control-measure>div{
+	border: 1px solid #95B9E6;
+	float: left;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+}
+.leaflet-control-measure>div:not(:first-child){
+	margin-left: -1px;
+}
+.leaflet-control-measure>div>img{
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+}
+.noDefault{
+	width: 0px;
+	height: 0px;
+}
+.myTooltip{
+	white-space:nowrap; 
+	float: left;
+	margin-left: 15px;
+	margin-top: -5px;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px #888888;
+	color: #000000;
+	padding: 2px 5px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	cursor: default;
+}
+.deleteBtn{
+	display: inline;
+	margin-top: -2px;
+	vertical-align: middle;
+	cursor: pointer !important;
+}
